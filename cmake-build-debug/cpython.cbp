@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="cpython"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/yaokun/python-private/cpython-main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/yaokun/python-private/cpython-main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/yaokun/python-private/cpython-main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="python.exe">
+				<Option output="/Users/yaokun/python-private/cpython-main/cmake-build-debug/python.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/yaokun/python-private/cpython-main/."/>
+					<Add directory="/Users/yaokun/python-private/cpython-main/Include"/>
+					<Add directory="/Users/yaokun/python-private/cpython-main/Include/internal"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 python.exe"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="python.exe/fast">
+				<Option output="/Users/yaokun/python-private/cpython-main/cmake-build-debug/python.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/yaokun/python-private/cpython-main/."/>
+					<Add directory="/Users/yaokun/python-private/cpython-main/Include"/>
+					<Add directory="/Users/yaokun/python-private/cpython-main/Include/internal"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 python.exe/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/yaokun/python-private/cpython-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_abc.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_asynciomodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_bisectmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_bz2module.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_codecsmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_collectionsmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_contextvarsmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_cryptmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_csv.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_curses_panel.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_cursesmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_datetimemodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_dbmmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_elementtree.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_functoolsmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_gdbmmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_hashopenssl.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_heapqmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_json.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_localemodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_lsprof.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_lzmamodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_opcode.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_operator.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_pickle.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_posixsubprocess.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_queuemodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_randommodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_scproxy.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_sre.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_ssl.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_ssl.h">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_stat.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_statisticsmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_struct.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_testbuffer.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_testcapimodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_testimportmultiple.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_testinternalcapi.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_testmultiphase.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_threadmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_tkinter.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_tracemalloc.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_typingmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_uuidmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_weakref.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_winapi.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_xxsubinterpretersmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/_zoneinfo.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/arraymodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/atexitmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/audioop.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/binascii.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/cmathmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/config.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/errnomodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/faulthandler.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/fcntlmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/gcmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/getaddrinfo.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/getbuildinfo.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/getnameinfo.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/getpath.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/grpmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/itertoolsmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/main.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/mathmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/md5module.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/mmapmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/nismodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/ossaudiodev.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/overlapped.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/posixmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/posixmodule.h">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/pwdmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/pyexpat.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/readline.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/resource.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/rotatingtree.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/rotatingtree.h">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/selectmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/sha1module.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/sha256module.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/sha512module.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/signalmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/socketmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/socketmodule.h">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/spwdmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/symtablemodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/syslogmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/termios.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/timemodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/tkappinit.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/unicodedata.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/xxlimited.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/xxlimited_35.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/xxmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/xxsubtype.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Modules/zlibmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/abstract.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/accu.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/boolobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/bytearrayobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/bytes_methods.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/bytesobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/call.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/capsule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/cellobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/classobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/codeobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/complexobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/descrobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/dictobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/enumobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/exceptions.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/fileobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/floatobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/frameobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/funcobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/genericaliasobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/genobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/interpreteridobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/iterobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/listobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/longobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/memoryobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/methodobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/moduleobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/namespaceobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/object.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/obmalloc.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/odictobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/picklebufobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/rangeobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/setobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/sliceobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/structseq.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/tupleobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/typeobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/unicodectype.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/unicodeobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/unionobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Objects/weakrefobject.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Parser/action_helpers.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Parser/myreadline.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Parser/parser.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Parser/peg_api.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Parser/pegen.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Parser/pegen.h">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Parser/pegen_errors.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Parser/string_parser.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Parser/string_parser.h">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Parser/token.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Parser/tokenizer.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Parser/tokenizer.h">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Programs/_freeze_module.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Programs/_testembed.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Programs/python.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/Python-ast.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/Python-tokenize.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/_warnings.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/asdl.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/ast.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/ast_opt.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/ast_unparse.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/bltinmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/bootstrap_frozen.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/bootstrap_hash.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/ceval.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/codecs.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/compile.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/context.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/dtoa.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/dup2.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/dynamic_annotations.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/dynload_hpux.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/dynload_shlib.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/dynload_stub.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/dynload_win.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/errors.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/fileutils.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/formatter_unicode.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/frame.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/frozen.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/frozenmain.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/future.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/getargs.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/getcompiler.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/getcopyright.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/getopt.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/getplatform.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/getversion.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/hamt.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/hashtable.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/import.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/importdl.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/importdl.h">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/initconfig.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/marshal.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/modsupport.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/mysnprintf.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/mystrtoul.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/pathconfig.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/preconfig.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/pyarena.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/pyctype.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/pyfpe.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/pyhash.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/pylifecycle.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/pymath.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/pystate.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/pystrcmp.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/pystrhex.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/pystrtod.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/pythonrun.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/pytime.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/specialize.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/structmember.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/suggestions.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/symtable.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/sysmodule.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/thread.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/Python/traceback.c">
+			<Option target="python.exe"/>
+		</Unit>
+		<Unit filename="/Users/yaokun/python-private/cpython-main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
