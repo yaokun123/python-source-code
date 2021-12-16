@@ -111,7 +111,7 @@ long_normalize(PyLongObject *v)
 
 PyLongObject *
 _PyLong_New(Py_ssize_t size)
-{
+{//// 创建int对象
     PyLongObject *result;
     if (size > (Py_ssize_t)MAX_LONG_DIGITS) {
         PyErr_SetString(PyExc_OverflowError,
@@ -250,10 +250,11 @@ _PyLong_Negate(PyLongObject **x_p)
     Py_DECREF(x);
 }
 
-/* Create a new int object from a C long int */
+//// Create a new int object from a C long int
 PyObject *
 PyLong_FromLong(long ival)
 {
+    //  检查传入的long值是否属于小整数的范围，如果确实是属于小整数，只需要返回在对象池中的对应的对象就可以了。
     if (IS_SMALL_INT(ival)) {
         return get_small_int((sdigit)ival);
     }
@@ -281,6 +282,8 @@ PyLong_FromLong(long ival)
         ++ndigits;
         t >>= PyLong_SHIFT;
     }
+
+    // 创建int对象
     PyLongObject *v = _PyLong_New(ndigits);
     if (v != NULL) {
         digit *p = v->ob_digit;
@@ -2170,7 +2173,7 @@ long_from_binary_base(const char **str, int base, PyLongObject **res)
  */
 PyObject *
 PyLong_FromString(const char *str, char **pend, int base)
-{
+{//// 根据字符串创建int对象
     int sign = 1, error_if_nonzero = 0;
     const char *start, *orig_str = str;
     PyLongObject *z = NULL;
