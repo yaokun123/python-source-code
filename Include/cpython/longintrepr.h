@@ -82,9 +82,11 @@ typedef long stwodigits; /* signed variant of twodigits */
    aware that ints abuse  ob_size's sign bit.
 */
 
-struct _longobject {
-    PyObject_VAR_HEAD
-    digit ob_digit[1];
+struct _longobject {        //// int 对象
+    PyObject_VAR_HEAD       // PyVarObject ob_base
+    digit ob_digit[1];      // unsigned int
+                            // python中的整数是通过PyLongObject对象来实现的
+                            // 实际上就是对c中unsigned int的一个简单包装
 };
 
 PyAPI_FUNC(PyLongObject *) _PyLong_New(Py_ssize_t);

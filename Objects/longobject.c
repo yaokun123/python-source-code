@@ -2937,25 +2937,33 @@ PyLong_AsDouble(PyObject *v)
 /* if a < b, return a negative number
    if a == b, return 0
    if a > b, return a positive number */
-
+//// int的比较操作
 static Py_ssize_t
 long_compare(PyLongObject *a, PyLongObject *b)
 {
+    // Py_SIZE: PyVarObject->ob_size，先比较个数
     Py_ssize_t sign = Py_SIZE(a) - Py_SIZE(b);
+
+    // 个数相同
     if (sign == 0) {
-        Py_ssize_t i = Py_ABS(Py_SIZE(a));
-        sdigit diff = 0;
-        while (--i >= 0) {
+        Py_ssize_t i = Py_ABS(Py_SIZE(a));// 取出元素个数
+        sdigit diff = 0;                    // 定义比较结果
+        while (--i >= 0) {                  // 循环比较每一个元素
+
+            // 取出int 数值进行比较
             diff = (sdigit) a->ob_digit[i] - (sdigit) b->ob_digit[i];
             if (diff) {
-                break;
+                break;                      // 如果数值不相等，直接跳出循环，返回比较结果即可
             }
         }
         sign = Py_SIZE(a) < 0 ? -diff : diff;
     }
+
+    // 个数不同直接返回比较个数的结果
     return sign;
 }
 
+//// int的比较操作
 static PyObject *
 long_richcompare(PyObject *self, PyObject *other, int op)
 {
@@ -2964,7 +2972,8 @@ long_richcompare(PyObject *self, PyObject *other, int op)
     if (self == other)
         result = 0;
     else
-        result = long_compare((PyLongObject*)self, (PyLongObject*)other);
+        // 将PyObject强转为PyLongObject，然后比较
+        result = long_compare((PyLongObject*)self, (PyLongObject*)other);   //// 真正的比较操作
     Py_RETURN_RICHCOMPARE(result, 0, op);
 }
 
@@ -3027,7 +3036,7 @@ long_hash(PyLongObject *v)
 
 
 /* Add the absolute values of two integers. */
-
+//// 数值加法操作
 static PyLongObject *
 x_add(PyLongObject *a, PyLongObject *b)
 {
@@ -3037,26 +3046,34 @@ x_add(PyLongObject *a, PyLongObject *b)
     digit carry = 0;
 
     /* Ensure a is the larger of the two: */
-    if (size_a < size_b) {
+    if (size_a < size_b) {// a元素个数小于b元素个数，交换一下
         { PyLongObject *temp = a; a = b; b = temp; }
         { Py_ssize_t size_temp = size_a;
             size_a = size_b;
             size_b = size_temp; }
     }
+
+    // 创建一个新的对象用于返回，大小按照最大的元素个数来算
     z = _PyLong_New(size_a+1);
     if (z == NULL)
         return NULL;
+
+    // 先循环元素个数较小的
     for (i = 0; i < size_b; ++i) {
         carry += a->ob_digit[i] + b->ob_digit[i];
         z->ob_digit[i] = carry & PyLong_MASK;
         carry >>= PyLong_SHIFT;
     }
+
+    // i接着上一次循环，循环元素个数较大的
     for (; i < size_a; ++i) {
         carry += a->ob_digit[i];
         z->ob_digit[i] = carry & PyLong_MASK;
         carry >>= PyLong_SHIFT;
     }
     z->ob_digit[i] = carry;
+
+    // 返回新的对象
     return long_normalize(z);
 }
 
@@ -3116,6 +3133,7 @@ x_sub(PyLongObject *a, PyLongObject *b)
     return maybe_small_long(long_normalize(z));
 }
 
+//// 数值加法操作
 PyObject *
 _PyLong_Add(PyLongObject *a, PyLongObject *b)
 {
@@ -3148,6 +3166,7 @@ _PyLong_Add(PyLongObject *a, PyLongObject *b)
     return (PyObject *)z;
 }
 
+//// 数值加法操作
 static PyObject *
 long_add(PyLongObject *a, PyLongObject *b)
 {
@@ -5707,7 +5726,7 @@ Base 0 means to interpret the base from the string as an integer literal.\n\
 >>> int('0b100', base=0)\n\
 4");
 
-static PyNumberMethods long_as_number = {
+static PyNumberMethods long_as_number = {               ////    数值操作（加减乘除等。。。）
     (binaryfunc)long_add,       /*nb_add*/
     (binaryfunc)long_sub,       /*nb_subtract*/
     (binaryfunc)long_mul,       /*nb_multiply*/
@@ -5744,7 +5763,7 @@ static PyNumberMethods long_as_number = {
     long_long,                  /* nb_index */
 };
 
-PyTypeObject PyLong_Type = {
+PyTypeObject PyLong_Type = {                             //// int 的类型对象
     PyVarObject_HEAD_INIT(&PyType_Type, 0)
     "int",                                      /* tp_name */
     offsetof(PyLongObject, ob_digit),           /* tp_basicsize */
@@ -5754,11 +5773,11 @@ PyTypeObject PyLong_Type = {
     0,                                          /* tp_getattr */
     0,                                          /* tp_setattr */
     0,                                          /* tp_as_async */
-    long_to_decimal_string,                     /* tp_repr */
-    &long_as_number,                            /* tp_as_number */
+    long_to_decimal_string,                     /* tp_repr */    ////    转化成PyString对象
+    &long_as_number,                            /* tp_as_number */////    数值操作，PyNumberMethods结构体
     0,                                          /* tp_as_sequence */
     0,                                          /* tp_as_mapping */
-    (hashfunc)long_hash,                        /* tp_hash */
+    (hashfunc)long_hash,                        /* tp_hash */   ////    获得HASH值
     0,                                          /* tp_call */
     0,                                          /* tp_str */
     PyObject_GenericGetAttr,                    /* tp_getattro */
@@ -5770,11 +5789,11 @@ PyTypeObject PyLong_Type = {
     long_doc,                                   /* tp_doc */
     0,                                          /* tp_traverse */
     0,                                          /* tp_clear */
-    long_richcompare,                           /* tp_richcompare */
+    long_richcompare,                           /* tp_richcompare */    //// 比较操作
     0,                                          /* tp_weaklistoffset */
     0,                                          /* tp_iter */
     0,                                          /* tp_iternext */
-    long_methods,                               /* tp_methods */
+    long_methods,                               /* tp_methods */    ////    成员函数
     0,                                          /* tp_members */
     long_getset,                                /* tp_getset */
     0,                                          /* tp_base */
